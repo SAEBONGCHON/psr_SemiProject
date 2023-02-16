@@ -16,7 +16,8 @@
 	<script>
 	$(".btn.login").on("click", handlerClickBtnLogin);
 	$(".btn.logout").on("click", handlerClickBtnLogout);
-		
+	$(".btn.join").on("click", handlerClickBtnJoin);
+	
 	function handlerClickBtnLogin(){
 		console.log("글적글적 핸들러 로그인 버튼 클릭");
 		location.href="<%=request.getContextPath()%>/login"
@@ -24,8 +25,11 @@
 	function handlerClickBtnLogout(){
 		console.log("글적글적 핸들러 로그아웃 버튼 클릭");
 		}
+	function handlerClickBtnJoin(){
+		console.log("글적글적 핸들러 회원가입 버튼 클릭");
+		location.href="<%=request.getContextPath()%>/join"
+	}
 	</script>
-
 
 </body>
 </html>
