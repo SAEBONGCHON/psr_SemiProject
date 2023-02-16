@@ -1,6 +1,7 @@
-package kh.member.model;
+package kh.member.model.vo;
 
-public class memberVO {
+public class MemberVO {
+	//TB_USER
 //	USERID PASSWD NICKNAME  EMAIL
 //	user1	user1	바바비	user1@naver.com
 //	user2	user2	비빔밥	user2@naver.com
@@ -11,14 +12,14 @@ public class memberVO {
 	
 	
 	
-	public memberVO(String userid, String passwd, String nickname, String email) {
+	public MemberVO(String userid, String passwd, String nickname, String email) {
 		super();
 		this.userid = userid;
 		this.passwd = passwd;
 		this.nickname = nickname;
 		this.email = email;
 	}
-	public memberVO() {}
+	public MemberVO() {}
 	@Override
 	public String toString() {
 		return "memberVO [userid=" + userid + ", passwd=" + passwd + ", nickname=" + nickname + ", email=" + email
