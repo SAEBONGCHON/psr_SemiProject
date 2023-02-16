@@ -1,0 +1,13 @@
+alter session set "_ORACLE_SCRIPT"= true;
+
+create user geuljeok identified by GEULJEOK;
+grant connect, resource, dba to geuljeok;
+
+create table TB_USER(
+    USERID VARCHAR2(30CHAR) NOT NULL,
+    PASSWD VARCHAR2(30CHAR) NOT NULL,
+    NICKNAME VARCHAR2(30CHAR) NOT NULL,
+    EMAIL VARCHAR2(30CHAR) NOT NULL
+    );
+    
+select * from TB_USER;
