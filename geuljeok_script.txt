@@ -11,3 +11,6 @@ create table TB_USER(
     );
     
 select * from TB_USER;
+
+INSERT INTO TB_USER VALUES ('user1', 'user1', '바바비', 'user1@naver.com');
+INSERT INTO TB_USER VALUES ('user2', 'user2', '비빔밥', 'user2@naver.com');
