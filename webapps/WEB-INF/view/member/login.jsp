@@ -27,9 +27,10 @@
 				<button type="submit" onclick="{login}">로그인</button>
 			</div>
 			<div>
-				<a href="/member/join">회원가입</a>
+				<span><a>회원가입</a></span>
 			</div>
 		</form>
+
 	</section>
 	
 	

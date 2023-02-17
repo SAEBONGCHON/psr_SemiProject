@@ -19,11 +19,9 @@
             </div>
             <div>
                 <label>비밀번호</label>
-                <input type="password" placeholder="최소 8자리 이상">
-            </div>
-            <div>
+                <input type="password" id="password" placeholder="최소 8자리 이상">
                 <label>비밀번호 확인</label>
-                <input type="password">
+                <input type="password" id="confirm_password" >
             </div>
             <div>
                 <label>닉네임</label>
