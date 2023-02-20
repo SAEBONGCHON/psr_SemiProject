@@ -38,7 +38,10 @@ public class LoginController extends HttpServlet {
 		MemberVO vo = new MemberVO();
 	    vo.setUserid(request.getParameter("userid"));
 		vo.setPasswd(request.getParameter("passwd"));
-		
+		String id = request.getParameter("userid");
+		String pw = request.getParameter("passwd");
+		System.out.println(id);
+		System.out.println(pw);
 		MemberVO result = new MemberService().login(vo);
 		if(result != null) {
 			request.getSession().setAttribute("loginSesstion", result);
