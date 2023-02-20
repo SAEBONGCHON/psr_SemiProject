@@ -14,7 +14,7 @@
 	<h1>글적글적의 로그인 화면입니다.</h1>
 	
 	<section>
-		<form action="">
+		<form action="login" method="post">
 			아이디 : <input type="text" name="userid"><br>
 			비밀번호 : <input type="password" name="passwd"><br>
 			<div>
@@ -24,7 +24,7 @@
 				<a href="#">비밀번호 찾기</a>
 			</div>
 			<div>
-				<button type="submit" onclick="{login}">로그인</button>
+				<button type="submit">로그인</button>
 			</div>
 			<div>
 				<span><a>회원가입</a></span>
