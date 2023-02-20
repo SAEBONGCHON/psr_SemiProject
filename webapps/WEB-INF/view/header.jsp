@@ -7,6 +7,7 @@
 loginss이 비어있는지 체크한다, 비어있다면 로그인 표시,
 아니라면 로그아웃이 나타나게 한다.-->
 	<div align="right">
+		<button type="button" class="btn write">글쓰기</button>
 		<c:choose>
 			<c:when test="${empty loginss }">
 				<button type="button" class="btn login">로그인</button>			

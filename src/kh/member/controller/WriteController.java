@@ -7,21 +7,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import kh.member.model.MemberService;
-import kh.member.model.vo.MemberVO;
-
 /**
- * Servlet implementation class LoginController
+ * Servlet implementation class WriteController
  */
-@WebServlet("/login")
-public class LoginController extends HttpServlet {
+@WebServlet("/write")
+public class WriteController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginController() {
+    public WriteController() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 
@@ -29,18 +27,7 @@ public class LoginController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		MemberVO vo = new MemberVO();
-	    vo.setUserid(request.getParameter("userid"));
-		vo.setPasswd(request.getParameter("passwd"));
-		
-		MemberVO result = new MemberService().login(vo);
-		if(result != null) {
-			request.getSession().setAttribute("loginSesstion", result);
-		} else {
-			System.out.println("로그인 실패");
-		}
-		
-		response.sendRedirect(request.getContextPath()+"/");
+	
 	}
 
 }

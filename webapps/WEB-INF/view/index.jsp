@@ -1,3 +1,4 @@
+<script src="<%=request.getContextPath() %>/resource/css/reset/css">
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
@@ -17,6 +18,8 @@
 	$(".btn.login").on("click", handlerClickBtnLogin);
 	$(".btn.logout").on("click", handlerClickBtnLogout);
 	$(".btn.join").on("click", handlerClickBtnJoin);
+	$(".btn.write").on("click", handlerClickBtnWrite);
+	
 	
 	function handlerClickBtnLogin(){
 		console.log("글적글적 핸들러 로그인 버튼 클릭");
@@ -28,6 +31,10 @@
 	function handlerClickBtnJoin(){
 		console.log("글적글적 핸들러 회원가입 버튼 클릭");
 		location.href="<%=request.getContextPath()%>/join"
+	}
+	function handlerClickBtnWrite(){
+		console.log("글적글적 핸들러 글쓰기 버튼 클릭");
+		location.href="<%=request.getContextPath()%>/write"
 	}
 	</script>
 
