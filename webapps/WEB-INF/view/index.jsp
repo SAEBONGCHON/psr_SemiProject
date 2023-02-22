@@ -37,12 +37,13 @@
 	}
 	</script>
 	<hr>
-	<div align="center">
+	<!-- <div align="center">
 		<form action="">
 			<input type="text" placeholde="검색어 입력">
 			<button>검색</button>			
 		</form>
 	</div>
+	 -->
 
 	
 </body>
