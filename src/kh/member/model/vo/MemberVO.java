@@ -1,29 +1,32 @@
 package kh.member.model.vo;
 
 public class MemberVO {
-	//TB_USER
-//	USERID PASSWD NICKNAME  EMAIL
-//	user1	user1	바바비	user1@naver.com
-//	user2	user2	비빔밥	user2@naver.com
+//	tbUser(
+//			userid varchar2(30) primary KEY,
+//			userpw varchar2(30) NOT NULL,
+//			nickname varchar(30) NOT NULL,
+//			useremail varchar (30) NOT NULL
 	private String userid;
-	private String passwd;
+	private String userpw;
 	private String nickname;
-	private String email;
+	private String useremail;
 	
 	
-	
-	public MemberVO(String userid, String passwd, String nickname, String email) {
-		super();
-		this.userid = userid;
-		this.passwd = passwd;
-		this.nickname = nickname;
-		this.email = email;
-	}
-	public MemberVO() {}
 	@Override
 	public String toString() {
-		return "memberVO [userid=" + userid + ", passwd=" + passwd + ", nickname=" + nickname + ", email=" + email
-				+ "]";
+		return "MemberVO [userid=" + userid + ", userpw=" + userpw + ", nickname=" + nickname + ", useremail="
+				+ useremail + "]";
+	}
+	public MemberVO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public MemberVO(String userid, String userpw, String nickname, String useremail) {
+		super();
+		this.userid = userid;
+		this.userpw = userpw;
+		this.nickname = nickname;
+		this.useremail = useremail;
 	}
 	public String getUserid() {
 		return userid;
@@ -31,11 +34,11 @@ public class MemberVO {
 	public void setUserid(String userid) {
 		this.userid = userid;
 	}
-	public String getPasswd() {
-		return passwd;
+	public String getUserpw() {
+		return userpw;
 	}
-	public void setPasswd(String passwd) {
-		this.passwd = passwd;
+	public void setUserpw(String userpw) {
+		this.userpw = userpw;
 	}
 	public String getNickname() {
 		return nickname;
@@ -43,12 +46,13 @@ public class MemberVO {
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
-	public String getEmail() {
-		return email;
+	public String getUseremail() {
+		return useremail;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setUseremail(String useremail) {
+		this.useremail = useremail;
 	}
+	
 	
 	
 }

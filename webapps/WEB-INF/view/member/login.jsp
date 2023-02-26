@@ -14,7 +14,7 @@
 	<h1>글적글적의 로그인 화면입니다.</h1>
 	
 	<section>
-		<form action="login" method="post">
+		<form action="login" method="post" >
 			아이디 : <input type="text" name="userid"><br>
 			비밀번호 : <input type="password" name="passwd"><br>
 			<div>
@@ -32,8 +32,18 @@
 		</form>
 
 	</section>
-	
-	
+	<script>
+	$(".btn.join").on("click", handlerClickBtnJoin)
+	$(".btn.write").on("click", handlerClickBtnWrite)
+	function handlerClickBtnJoin(){
+		console.log("글적글적 핸들러 회원가입 버튼 클릭");
+		location.href="<%=request.getContextPath()%>/join"
+	}
+	function handlerClickBtnWrite(){
+		console.log("글적글적 핸들러 글쓰기 버튼 클릭");
+		location.href="<%=request.getContextPath()%>/write"
+	}
+	</script>
 
 </body>
 </html>
